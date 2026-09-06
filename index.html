@@ -96,7 +96,7 @@
             }
 
             .btn-x {
-                background-color: #000000;
+                background-color: #181717;
                 color: #ffffff;
                 border: 1px solid #333;
             }
@@ -123,8 +123,9 @@
             /* 作品グリッドレイアウト */
             .works-grid {
                 display: grid;
-                grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-                gap: 24px;
+                /*grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));*/
+                grid-template-columns: 1fr;
+                gap: 32px;
             }
 
             .work-card {
@@ -226,10 +227,10 @@
 
             <!-- SNS・GitHubへのリンクボタン -->
                 <div class="social-links">
-                    <a href="https://github.com/あなたのユーザー名" target="_blank" class="btn btn-github">
+                    <a href="https://github.com/KR9827" target="_blank" class="btn btn-github">
                         <span>GitHub</span>
                     </a>
-                    <a href="https://x.com/あなたのユーザー名" target="_blank" class="btn btn-x">
+                    <a href="https://x.com/kr9827" target="_blank" class="btn btn-x">
                         <span>X (Twitter)</span>
                     </a>
                 </div>
@@ -246,12 +247,14 @@
                         <!-- 使う画像をここに書く -->
                         <img src="https://via.placeholder.com/600x350/1a1d20/00d26a?text=Game+Screenshot+1" alt="作品1" class="work-img">
                         <div class="work-content">
-                            <h3 class="work-title">タイトル</h3>
+                            <h3 class="work-title">地雷系女子、復讐します</h3>
                             <div class="work-tags">
+                                <span class="tag">Unreal Engine</span>
                                 <span class="tag">C++</span>
-                                <span class="tag">OpenSiv3D</span>
                             </div>
                             <p class="work-desc">
+                                チーム開発（担当：敵AI）<br>
+                                制作期間：6ヶ月（継続開発中）<br>
                                 頑張った内容とかの説明
                             </p>
                             <div class="work-links">
@@ -262,6 +265,25 @@
                     </article>
 
                     <!-- 作品カード2 -->
+                     <article class="work-card">
+                        <img src="https://via.placeholder.com/600x350/1a1d20/00d26a?text=Game+Screenshot+2" alt="作品2" class="work-img">
+                        <div class="work-content">
+                            <h3 class="work-title">タイトル</h3>
+                            <div class="work-tags">
+                                <span class="tag">Unreal Engine</span>
+                                <span class="tag">C++</span>
+                            </div>
+                            <p class="work-desc">
+                                ここに説明を書く
+                            </p>
+                            <div class="work-links">
+                                <a href="https://github.com/..." target="_blank" class="work-link">GitHub →</a>
+                                <a href="https://youtube.com/..." target="_blank" class="work-link">Video →</a>
+                            </div>
+                        </div>
+                     </article>
+
+                    <!-- 作品カード3 -->
                      <article class="work-card">
                         <img src="https://via.placeholder.com/600x350/1a1d20/00d26a?text=Game+Screenshot+2" alt="作品2" class="work-img">
                         <div class="work-content">
