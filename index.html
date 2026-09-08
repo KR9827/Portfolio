@@ -60,6 +60,15 @@
                 margin-bottom: 12px;
             }
 
+            .profile-info h2 {
+                color: var(--accent-color);
+                font-size: 1.5rem;
+                font-weight: 700;
+                margin-bottom: 4px;
+                letter-spacing: 0.05em;
+                border-bottom: 2px solid var(--accent-color);
+            }
+
             .profile-info p {
                 color: var(--text-sub);
                 font-size: 0.95rem;
@@ -99,6 +108,52 @@
                 background-color: #181717;
                 color: #ffffff;
                 border: 1px solid #333;
+            }
+
+            .profile-info p.profile-text {
+                color: var(--text-main);
+                margin-top: 24px;
+            }
+
+            /* 学歴・職歴セクション全体のスタイル */
+            .history-section {
+                margin-top: 24px;
+            }
+
+            .history-sub-title {
+                font-size: 1.1rem;
+                font-weight: 700;
+                color: var(--text-main);
+                margin-bottom: 12px;
+                padding-bottom: 4px;
+                border-bottom: 1px solid var(--border-color);
+            }
+
+            .history-section + .history-section {
+                margin-top: 36px;
+            }
+
+            .history-list {
+                display: flex;
+                flex-direction: column;
+                gap: 8px;
+            }
+
+            .history-item {
+                display: flex;
+                font-size: 0.92rem;
+                color: var(--text-main);
+            }
+
+            .history-data {
+                width: 180px;
+                flex-shrink: 0;
+                color: var(--text-main);
+                font-weight: 500;
+            }
+
+            .history-content {
+                flex-grow: 1;
             }
 
             /* セクションタイトル */
@@ -158,6 +213,7 @@
                 font-size: 1.15rem;
                 font-weight: 700;
                 margin-bottom: 8px;
+                border-bottom: 1px solid var(--border-color);
             }
 
             .work-tags {
@@ -218,10 +274,10 @@
              <header>
                 <div class="profile-info">
                     <h1>梶原 蓮太郎</h1>
-                    <div class="title">Game Programmer / Client Engineer</div>
+                    <div class="title">Game Programmer</div>
                     <p>
-                        ゲームプログラマーを目指し、C++やUnreal Engineを用いた3Dアクションゲームの開発を中心に学んでいます。<br>
-                        ステートマシンによる敵AI設計、マルチキャストデリゲートを活用した戦闘システム実装など、レスポンスと手触りの良いゲームプレイ処理が得意です。
+                        バンタンゲームアカデミー福岡校<br>
+                        専門部　ゲーム学部　3年制ゲームプログラマー専攻
                     </p>
                 </div>
 
@@ -233,6 +289,54 @@
                     <a href="https://x.com/kr9827" target="_blank" class="btn btn-x">
                         <span>X (Twitter)</span>
                     </a>
+                </div>
+            </header>
+
+            <header>
+                <div class="profile-info">
+                    <h2>About Me</h2>
+                    <p class="profile-text">
+                        ゲームプログラマーを目指し、C++やUnreal Engineを用いた3Dアクションゲームの開発を中心に学んでいます。<br>
+                        開発では「保守性の高いコード設計」や「チームでの調整しやすさ」を意識しています。
+                    </p>
+                </div>
+            </header>
+
+            <header class="history-header">
+                <div class="profile-info">
+                    <h2>学歴・職歴</h2>
+
+                    <div class="history-section">
+                        <h3 class="history-sub-title">学歴</h3>
+                        <div class="history-list">
+                            <div class="history-item">
+                                <span class="history-data">2022年3月</span>
+                                <span class="history-content">島根大学 卒業</span>
+                            </div>
+                            <div class="history-item">
+                                <span class="history-data">2025年4月～現在</span>
+                                <span class="history-content">バンタンゲームアカデミー福岡校 在学中</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="history-section">
+                        <h3 class="history-sub-title">職歴</h3>
+                        <div class="history-list">
+                            <div class="history-item">
+                                <span class="history-data">2022年4月～2023年3月</span>
+                                <span class="history-content">福岡県立東鷹高等学校勤務</span>
+                            </div>
+                            <div class="history-item">
+                                <span class="history-data">2023年4月～2024年3月</span>
+                                <span class="history-content">福岡県立嘉穂高等学校勤務</span>
+                            </div>
+                            <div class="history-item">
+                                <span class="history-data">2024年4月～2025年3月</span>
+                                <span class="history-content">福岡県立京都高等学校勤務</span>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </header>
 
@@ -253,9 +357,9 @@
                                 <span class="tag">C++</span>
                             </div>
                             <p class="work-desc">
-                                【体制】チーム開発（担当：敵AI）<br>
-                                【期間】2026年3月～現在（制作期間：6ヶ月）（継続開発中）<br>
-                                【概要】Behavior TreeとC++を組み合わせ、プレイヤーとの距離や状態に応じた複数パターンの敵AIロジックおよび攻撃判定を実装。開発における外部との連携窓口を担当。
+                                【ジャンル】3Dアクション（チーム開発 / 担当：敵AI）<br>
+                                【開発期間】2026年3月～現在（制作期間：6ヶ月）（継続開発中）<br>
+                                【概要】地雷系女子が、浮気した彼氏と浮気相手に復讐する3Dアクションゲーム
                             </p>
                             <div class="work-links">
                                 <a href="https://github.com/..." target="_blank" class="work-link">GitHub</a>
@@ -273,9 +377,9 @@
                                 <span class="tag">C++</span>
                             </div>
                             <p class="work-desc">
-                                【体制】個人開発<br>
-                                【期間】2026年1月～2月（制作期間：2ヶ月）<br>
-                                【概要】3Dモデル（FBX）のassimpを用いたアニメーション再生や、クォータニオンを用いた三人称追従カメラの挙動補間を自作クラスで構築。コンポーネント指向のプログラムを実装。
+                                【ジャンル】3Dアクション（個人開発）<br>
+                                【開発期間】2026年1月～2月（制作期間：2ヶ月）<br>
+                                【概要】弱攻撃や強攻撃によるコンボ攻撃を駆使し、制限時間内に岩を破壊するゲーム。
                             </p>
                             <div class="work-links">
                                 <a href="https://github.com/KR9827/3DWorld" target="_blank" class="work-link">GitHub</a>
@@ -293,9 +397,9 @@
                                 <span class="tag">C#</span>
                             </div>
                             <p class="work-desc">
-                                【体制】個人開発<br>
-                                【期間】2025年8月～9月（制作期間：2ヶ月）<br>
-                                【概要】探索、謎解き、戦闘要素を取り入れたトップダウン型アクションゲーム。Unityでのゲームループ構築を学ぶ目的で作成し、敵の接近判定や攻撃ロジック、プレイヤーの移動制御をC#で実装。ゲームとして1つの遊べる形に完成させることを重視した。
+                                【ジャンル】トップダウン型2Dアクション（個人開発）<br>
+                                【開発期間】2025年8月～9月（制作期間：2ヶ月）<br>
+                                【概要】探索、謎解き、戦闘要素を取り入れたトップダウン型アクションゲーム。
                             </p>
                             <div class="work-links">
                                 <a href="https://github.com/KR9827/TopDownAction" target="_blank" class="work-link">GitHub</a>
@@ -313,9 +417,9 @@
                                 <span class="tag">C++</span>
                             </div>
                             <p class="work-desc">
-                                【体制】個人開発<br>
-                                【期間】2025年5月～6月（制作期間：2ヶ月）<br>
-                                【概要】DxLibを用いたC++の基礎力向上プロジェクト。2Dオブジェクト同士の当たり判定（AABB）や、ステートパターンによるシーン遷移管理やターンの制御。
+                                【ジャンル】ターン制コマンドバトル（個人開発）<br>
+                                【開発期間】2025年5月～6月（制作期間：2ヶ月）<br>
+                                【概要】パリィやクリティカル、回避など、アクション要素もあるコマンドバトルのゲーム。
                             </p>
                             <div class="work-links">
                                 <a href="https://github.com/KR9827/Container-VS-Box" target="_blank" class="work-link">GitHub</a>
@@ -333,9 +437,9 @@
                                 <span class="tag">C++</span>
                             </div>
                             <p class="work-desc">
-                                【体制】個人開発<br>
-                                【期間】2025年10月～11月制作期間：1ヶ月半<br>
-                                【概要】
+                                【ジャンル】出荷回避リアクションアクション（個人開発）<br>
+                                【開発期間】2025年10月～11月制作期間：1ヶ月半<br>
+                                【概要】農夫の思考アイコンに対応したキーを入力し、好感度を上げて出荷を回避するゲーム。
                             </p>
                             <div class="work-links">
                                 <a href="https://github.com/KR9827/Pig-sGreatHappinessStrategy" target="_blank" class="work-link">GitHub</a>
