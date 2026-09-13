@@ -196,12 +196,13 @@
                 border-color: var(--accent-color);
             }
 
-            /* サムネイル画像領域 */
-            .work-img {
+            /* サムネイル動画領域 */
+            .work-video {
                 width: 100%;
-                height: 180px;
+                aspect-ratio: 16/9;
+                height: auto;
                 background-color: #1a1d20;
-                object-fit: cover;
+                object-fit: contain;
                 display: block;
             }
 
@@ -353,7 +354,7 @@
                     <!-- 作品カード1 -->
                     <article class="work-card">
                         <!-- 使う画像をここに書く -->
-                        <img src="PV/GroundMineGirl_PV.mp4" alt="作品1" class="work-img">
+                        <video src="PV/GroundMineGirl_PV.mp4" class="work-video" autoplay muted loop playsinline controls></video>
                         <div class="work-content">
                             <h3 class="work-title">地雷系女子、復讐します</h3>
                             <div class="work-tags">
@@ -378,7 +379,7 @@
 
                     <!-- 作品カード2 -->
                      <article class="work-card">
-                        <img src="PV/MyFirst3D_PV.mp4" alt="作品2" class="work-img">
+                        <video src="PV/MyFirst3D_PV.mp4" class="work-video" autoplay muted loop playsinline controls></video>
                         <div class="work-content">
                             <h3 class="work-title">はじめての3D</h3>
                             <div class="work-tags">
@@ -398,7 +399,7 @@
 
                     <!-- 作品カード3 -->
                      <article class="work-card">
-                        <img src="https://via.placeholder.com/600x350/1a1d20/00d26a?text=Game+Screenshot+2" alt="作品3" class="work-img">
+                        <img src="https://via.placeholder.com/600x350/1a1d20/00d26a?text=Game+Screenshot+2" alt="作品3" class="work-video">
                         <div class="work-content">
                             <h3 class="work-title">シンザンの挑戦</h3>
                             <div class="work-tags">
@@ -418,7 +419,7 @@
 
                      <!-- 作品カード4 -->
                      <article class="work-card">
-                        <img src="https://via.placeholder.com/600x350/1a1d20/00d26a?text=Game+Screenshot+2" alt="作品4" class="work-img">
+                        <img src="https://via.placeholder.com/600x350/1a1d20/00d26a?text=Game+Screenshot+2" alt="作品4" class="work-video">
                         <div class="work-content">
                             <h3 class="work-title">コンテナくん対ダンボールちゃん</h3>
                             <div class="work-tags">
@@ -438,7 +439,7 @@
 
                      <!-- 作品カード5 -->
                      <article class="work-card">
-                        <img src="https://via.placeholder.com/600x350/1a1d20/00d26a?text=Game+Screenshot+2" alt="作品5" class="work-img">
+                        <img src="https://via.placeholder.com/600x350/1a1d20/00d26a?text=Game+Screenshot+2" alt="作品5" class="work-video">
                         <div class="work-content">
                             <h3 class="work-title">ぶたのゴキゲン大作戦</h3>
                             <div class="work-tags">
